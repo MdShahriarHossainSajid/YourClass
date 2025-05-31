@@ -31,6 +31,6 @@ You are **not allowed** to copy, modify, distribute, or use this code in any for
 
 For inquiries or permissions, please contact:
 
-**Email:** your.email@example.com  
-**GitHub:** [MdShahriarHossainSajid](https://github.com/MdShahriarHossainSajid)
+**Email:** sib7254313@gmail.com  
+**GitHub:** [MdShahriarHossainSajid] (https://github.com/MdShahriarHossainSajid)
 
