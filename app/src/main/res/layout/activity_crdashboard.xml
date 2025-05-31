@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg_canva">
+
+    <!-- ✅ Logo ImageView at the top -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+
+        android:contentDescription="App Logo" />
+
+    <!-- ✅ Scrollable Form Content below the logo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/card_bg_rounded"
+                android:backgroundTint="#160101"
+                android:clipToOutline="true"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <EditText
+                    android:id="@+id/noticeInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edittext_bg_cr"
+                    android:hint="Enter Notice"
+                    android:padding="12dp"
+                    android:textColor="#000"
+                    android:textColorHint="#777" />
+
+                <Button
+                    android:id="@+id/postNoticeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#6200EE"
+                    android:text="Post Notice"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/examDateInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edittext_bg_cr"
+                    android:hint="Enter Exam Date"
+                    android:padding="12dp"
+                    android:textColor="#000"
+                    android:textColorHint="#777" />
+
+                <Button
+                    android:id="@+id/postExamBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#03DAC5"
+                    android:text="Post Exam Date"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/noteLinkInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edittext_bg_cr"
+                    android:hint="Enter Class Note / Link"
+                    android:padding="12dp"
+                    android:textColor="#000"
+                    android:textColorHint="#777" />
+
+                <Button
+                    android:id="@+id/postNoteBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FF5722"
+                    android:text="Post Note"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/manageRoutineBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Routine"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="16dp" />
+                <Button
+                    android:id="@+id/attendanceBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📋 Attendance"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

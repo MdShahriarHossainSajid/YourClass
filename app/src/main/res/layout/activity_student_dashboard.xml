@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student_dashboard_bg_canva"
+    android:paddingTop="150dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Notice:"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <!-- Notice Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_notice"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/noticeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📢 Loading Notice..."
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Note:"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <!-- Notes Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_notes"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/noteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📚 Loading Notes..."
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Exam Date:"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <!-- Exam Date Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_exam"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/examDateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Loading Exam Dates..."
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <!-- Routine Button -->
+            <Button
+                android:id="@+id/viewRoutineBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 View Routine"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:background="@drawable/rounded_button" />
+
+            <!-- Tools Button -->
+            <Button
+                android:id="@+id/toolButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🛠️ Tools"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#FF9800"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:background="@drawable/rounded_button" />
+
+            <!-- Check Attendance Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCheckAttendance"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Check Attendance"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1E88E5"
+                android:padding="16dp"
+                android:layout_marginTop="40dp"
+                android:icon="@drawable/ic_attendance"
+                app:iconTint="#FFFFFF"
+                app:iconGravity="textStart"
+                app:iconPadding="12dp"
+                app:cornerRadius="12dp"
+                style="@style/Widget.MaterialComponents.Button" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

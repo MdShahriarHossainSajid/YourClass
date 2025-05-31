@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/routine_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Routine list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/routineRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scrollbars="vertical" />
+
+        <!-- Edit section: Visible only for teachers/CRs -->
+        <LinearLayout
+            android:id="@+id/editRoutineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="24dp">
+
+            <EditText
+                android:id="@+id/routineDayInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Day (e.g., Monday)"
+                android:inputType="textCapWords"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_bg_cr" />
+
+            <EditText
+                android:id="@+id/routineTimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time (e.g., 10:00 AM - 11:00 AM)"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_bg_cr" />
+
+            <EditText
+                android:id="@+id/routineSubjectInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject"
+                android:inputType="textCapWords"
+                android:padding="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_bg_cr" />
+
+            <Button
+                android:id="@+id/postRoutineBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Routine"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

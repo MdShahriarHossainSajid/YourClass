@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/canva_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Class Representative"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="  Select Semester"/>
+
+        <Spinner
+            android:id="@+id/semesterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="  Select Student"/>
+
+        <Spinner
+            android:id="@+id/studentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/assignCrBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:text="Assign CR" />
+
+        <TextView
+            android:id="@+id/currentCrText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current CR: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Notice"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/noticeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write notice here"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/postNoticeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:text="Post Notice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Exam Date"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/examDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter exam schedule"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/postExamBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:text="Post Exam Date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Class Note Link"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/noteLinkInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter note link (Google Drive or others)"
+            android:inputType="textUri"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/postNoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:text="Post Note" />
+    </LinearLayout>
+</ScrollView>
